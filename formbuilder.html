@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-color:#e8e8e8;
+}
+#button{
+	text-align:center;
+	padding: 20px 0px;
+	display:block;
+	height:30px;
+	width:175px;
+	cursor:pointer;
+	font-size:25px;
+	color:#F0F0F0;
+	border-radius:10px;
+	border-bottom:4px solid #0045A6;
+	box-shadow: 6px 6px 6px #999;
+	margin-top:10px;
+	user-select: none;
+    background: linear-gradient(#00C8F8, #0067F7);
+    transition: background 0.05s linear;
+	background-size:1px 200px;
+	text-decoration:none;	
+	transition: all .05s linear;
+}
+
+#button:hover{
+	background-position:100px;
+}
+
+#button:active {
+	box-shadow: 2px 2px 2px #777;
+	border-bottom:1px solid #0045A6;
+	transform: translateY(3px);
+}
+#pane{
+	visibility: hidden;
+	word-wrap: break-word;
+	height:100%;
+	   overflow-y: auto;
+	   white-space: nowrap;
+ }
+#left{
+	position:absolute;
+	left:0%;
+	top:10%;
+	width:20%;
+	height:90%;
+}
+#right{
+	position:absolute;
+	right:0%;
+	top:10%;
+	width:80%;
+	height:90%;
+	background-color:white;
+}
+
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<h1 id="head" style="text-align:center; color:grey;"></h1>
+<div id="left" style="float:left">
+	<span id="button" onclick="newForm()" >Create Form</span>
+	<div id="pane">
+		<span id="button" onclick="newText()" >Text</span>
+		<span id="button" onclick="newPass()" >Password</span>
+		<span id="button" onclick="newDrop()" >Drop Down</span>
+		<span id="button" onclick="newRadio()" >Radio Button</span>
+		<span id="button" onclick="newCheck()" >Checkbox</span>
+		<span id="button" onclick="newNum()" >Number</span>
+		<span id="button" onclick="newArea()" >Text Area</span>	
+		<span id="button" onclick="newFile()" >File</span>	
+		<span id="button" onclick="newKey()" >Keygen</span>	
+		<span id="button" onclick="newKey()" >Keygen</span>	
+	</div>
+</div>
+
+<div id="right" >
+
+</div>
+<script src="form.js"></script>
+</body>
+</html>
