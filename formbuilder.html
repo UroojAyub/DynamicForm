@@ -19,7 +19,7 @@ body{
 	box-shadow: 6px 6px 6px #999;
 	margin-top:10px;
 	user-select: none;
-    background: linear-gradient(#00C8F8, #0067F7);
+    background:#00C8F8;
     transition: background 0.05s linear;
 	background-size:1px 200px;
 	text-decoration:none;	
@@ -57,13 +57,20 @@ body{
 	height:90%;
 	background-color:white;
 }
+#sub{
+	position:absolute;
+	right:50%;
+	bottom:10%;
+	width:10%;
+	height:5%;
+}
 
 </style>
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<h1 id="head" style="text-align:center; color:grey;"></h1>
+<h1 id="head" style="text-align:center; color:white;background:rgb(127,127,127);font-size:35px;"></h1>
 <div id="left" style="float:left">
 	<span id="button" onclick="newForm()" >Create Form</span>
 	<div id="pane">
@@ -76,7 +83,7 @@ body{
 		<span id="button" onclick="newArea()" >Text Area</span>	
 		<span id="button" onclick="newFile()" >File</span>	
 		<span id="button" onclick="newKey()" >Keygen</span>	
-		<span id="button" onclick="newKey()" >Keygen</span>	
+
 	</div>
 </div>
 
